@@ -7,7 +7,7 @@
   background-color: #81b3d2;
   text-align: center;
 
-  &--reverce .features-wrapper {
+  &--reverce .features__wrapper {
     padding: 37px 20px 38px;
 
     @media (min-width: var.$tablet-width) {
@@ -29,7 +29,7 @@
       grid-template-columns: 2fr 1fr;
     }
 
-    &--reverce .features-wrapper {
+    &--reverce .features__wrapper {
       order: 0;
 
       @media (min-width: var.$tablet-width) {
@@ -47,19 +47,7 @@
   }
 }
 
-.features__image {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-
-  @media (min-width: var.$tablet-width) {
-    & {
-      max-height: 256px;
-    }
-  }
-}
-
-.features-wrapper {
+.features__wrapper {
   padding: 71px 20px 40px;
   box-sizing: border-box;
 
@@ -75,6 +63,18 @@
     & {
       width: 400px;
       padding: 30px 60px 25px;
+    }
+  }
+}
+
+.features__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: var.$tablet-width) {
+    & {
+      max-height: 256px;
     }
   }
 }
